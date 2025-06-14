@@ -2,9 +2,9 @@
 
 A modern, responsive web application that analyzes text content for SEO optimization. Features real-time keyword extraction, readability scoring, and content optimization suggestions.
 
-![SEO Analyzer Demo](/home/rocky/Pictures/Screenshots/Screenshot From 2025-06-14 15-15-33.png)
-![Node.js](/home/rocky/Pictures/Screenshots/Screenshot From 2025-06-14 15-36-54.png)
-![License](https://img.shields.io/badge/License-MIT-blue)
+![Overview](overview.png)
+![Analysis Result](analysis.png)
+
 
 ## ✨ Features
 
@@ -14,13 +14,6 @@ A modern, responsive web application that analyzes text content for SEO optimiza
 - **Readability Scoring**: Calculates Flesch Reading Ease scores
 - **Content Optimization**: Provides actionable suggestions for improvement
 - **Real-time Preview**: Shows optimized text with highlighted keywords
-
-### User Experience
-- **Responsive Design**: Works seamlessly on desktop and mobile devices
-- **Modern UI**: Clean, gradient-based design with smooth animations
-- **Dark Mode Support**: Automatic dark mode based on system preferences
-- **Keyboard Shortcuts**: Ctrl/Cmd + Enter to analyze, Escape to clear errors
-- **Copy to Clipboard**: One-click copying of optimized content
 
 ### Technical Features
 - **Dual Analysis Modes**: TextRazor API integration with local fallback
@@ -121,52 +114,6 @@ seo-analyzer/
 └── README.md             # This file
 ```
 
-## 🔧 API Endpoints
-
-### `GET /`
-Serves the main application interface
-
-### `GET /health`
-Returns server health status
-```json
-{
-  "status": "OK",
-  "timestamp": "2024-01-15T10:30:00.000Z"
-}
-```
-
-### `POST /analyze`
-Analyzes text content for SEO optimization
-
-**Request Body:**
-```json
-{
-  "text": "Your content to analyze..."
-}
-```
-
-**Response:**
-```json
-{
-  "readability": 65.5,
-  "title_score": 78,
-  "keywords": ["keyword1", "keyword2"],
-  "entities": ["entity1", "entity2"],
-  "word_count": 150,
-  "sentence_count": 8,
-  "suggestions": ["Suggestion 1", "Suggestion 2"],
-  "optimized_text": "Optimized version of your content...",
-  "analysis_method": "TextRazor API"
-}
-```
-
-## 🧪 Development
-
-### Development Mode
-```bash
-npm run dev
-```
-Uses nodemon for automatic server restarts during development.
 
 ### Code Structure
 
@@ -216,13 +163,6 @@ Adjust in `server.js`:
 - SEO scoring weights
 - API timeout settings
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## 📄 License
 
